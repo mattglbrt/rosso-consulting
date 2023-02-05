@@ -1,0 +1,34 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const meta = {
+  title: "Rosso Consulting",
+};
+---
+
+<Layout {meta}>
+  
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    callToAction2={{ text: 'Contact Us', href: 'mailto:info@rossoconsulting.com' }}
+    image={{ src: import('~/assets/images/hero.jpg'), alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="title">
+      Rosso Consulting
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Welcome to <span class="font-semibold">Rosso Consulting</span>.</span>
+      
+    </Fragment>
+  </Hero2>
+
+  
+</Layout>
