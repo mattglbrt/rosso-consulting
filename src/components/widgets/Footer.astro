@@ -35,6 +35,8 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
           <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a>
         </div>
         <div class="text-sm text-muted">
+          <Fragment slot="content"> Website designed, managed, and hosted by <a href="https://intellectechs.com">IntellecTechs</a>.</Fragment>
+   
           {
             secondaryLinks.map(({ text, href }) => (
               <a
